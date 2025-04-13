@@ -1,0 +1,186 @@
+body , html{
+    height: 100%; 
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+body {
+    background-image: url("../res/background.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Comfortaa', sans-serif; 
+    padding-top: 70px; /* navbar matghatich rest of the page*/
+}
+.navbar {
+    background-color: #bda051; 
+    padding: 10px 20px; 
+    position: absolute; /* bach mayt7arkch */
+    width: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 1000; /* navbar fou9 the rest */
+    display: flex; /* items horizontally */
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /*adding shadow */
+}
+
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* items horizontally */
+   
+}
+
+.Welcome {
+    display: flex; /* horizontally */
+    align-items: center; 
+}
+
+.Welcome li {
+    margin-right: 10px; /* Space between logo and label */
+}
+
+.Welcome label {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.items {
+    gap: 15px;
+    display: flex; /* horizontally */
+    align-items: center; /* items vertically */
+}
+
+.items li {
+    margin: 0 2px; /* Space between navbar items */
+}
+
+.items li a {
+    text-decoration: none; /* Remove underline */
+    color: #855133; /* text color */
+    font-size: 18px; /* font size */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s; /* Smooth hover effect */
+    padding: 5px;
+}
+
+.items li a:hover {
+    background-color: #df8956; /* Darker background when hovering */
+    border-radius: 5px; /* rounded corners */
+}
+.items li button{
+    text-decoration: none; /* remove underline */
+    color: #855133; /* rext color */
+    font-size: 18px; /* font size */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s; /* Smooth hover effect */
+    padding: 5px;
+    background-color: #df8956; /* darker background when hovering */
+    border-radius: 5px; /* rounded corners */
+
+}
+.items li input[type="search"] {
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 30px; /* Add space for the icon */
+    padding-right: 20px;
+    background-image: url("./res/search.png");
+    background-position: 170px center; /* position the icon */
+    background-repeat: no-repeat; /* no repeating the icon */
+    background-size: 20px 20px; /* size of the icon */
+}
+
+.items li a img {
+    margin-left: 8px; /* space between text and icon */
+    height: 20px; /*  icon size */
+    width: auto;
+}
+
+/**/
+
+         /* product grid container */
+         .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+
+            
+        }
+
+        /* individual product frame */
+        .product-frame {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        /* hover effect for product frame */
+        .product-frame:hover {
+            transform: scale(1.05);
+        }
+
+        /* product image */
+        .product-frame img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+
+        /* product details */
+        .product-details {
+            padding: 15px;
+        }
+
+        /* product name */
+        .product-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* product description */
+        .product-description {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        /* product price */
+        .product-price {
+            font-size: 18px;
+            color: #bda051;
+            font-weight: bold;
+        }
+
+        /* cart button */
+        .add-to-cart {
+            margin-top: 15px;
+            background-color: #bda051;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #df8956;
+        }
